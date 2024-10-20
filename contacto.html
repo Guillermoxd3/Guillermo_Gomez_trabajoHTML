@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Empresa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/img1.jpeg" alt="Logotipo de la empresa">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="#" method="POST">
+            <h2 class="text-center">Formulario de Contacto</h2>
+            <div class="container">
+                <div class="form-group">
+                    <label for="usuario"><i class="fa fa-user bigicon"></i> Nombre del cliente</label>
+                    <input id="usuario" name="usuario" type="text" placeholder="Ingrese usuario" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="Ingrese email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono"><i class="fa-solid fa-phone"></i> Número de teléfono</label>
+                    <input id="telefono" name="telefono" type="tel" placeholder="Ingrese teléfono" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicio"><i class="fa fa-briefcase"></i> Servicio</label>
+                    <input id="servicio" name="servicio" type="text" placeholder="Ingrese marca" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentarios"><i class="fa fa-comments"></i> Solicite más información</label>
+                    <textarea id="comentarios" name="comentarios" class="form-control" rows="4" required></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Enviar" class="btn btn-success">
+                    <a href="index.html" class="btn btn-danger">Volver</a>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Empresa</p>
+        <p>¿Cómo llegar?</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5962.367877080297!2d-0.9160988247788291!3d41.65176767955583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd596b30db3c8227%3A0xb13074382d024eff!2sAv.%20de%20Madrid%2C%20162%2C%20Delicias%2C%2050017%20Zaragoza!5e0!3m2!1ses-419!2ses!4v1729456064557!5m2!1ses-419!2ses" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <a href="#"><img src="img/facebook.png" alt="Red Social 1"></a>
+            <a href="#"><img src="img/whatsapp.png" alt="Red Social 2"></a>
+        </div>
+        <p><a href="#">Aviso Legal</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('img/slide2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Cambia el color del texto para mejor visibilidad */
+        }
+        footer{
+            color:black;
+        }
+        header nav img.logo {
+            max-width: 200px; /* Ajusta el tamaño del logo si es necesario */
+        }
+        h1, h2 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/img1.jpeg" alt="Logotipo de la empresa" class="logo">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="productos.html">Galería</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero text-center">
+            <h1>Bienvenidos a Mi Empresa</h1>
+            <p>Ofrecemos soluciones innovadoras en desarrollo web y tecnología.</p>
+        </section>
+
+        <section class="products">
+            <h2 class="text-center">Nuestros Productos</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/producto1.jpeg" class="card-img-top mx-auto" alt="Producto 1" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Análisis de Ciencia de Datos</h5>
+                                <p class="card-text">Descripción breve del producto.</p>
+                                <a href="presupuesto.html" class="btn btn-primary">Solicitar Presupuesto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/producto2.jpeg" class="card-img-top mx-auto" alt="Producto 2" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Venta y Distribución de Equipos Informáticos</h5>
+                                <p class="card-text">Descripción breve del producto.</p>
+                                <a href="presupuesto.html" class="btn btn-primary">Solicitar Presupuesto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="img/producto3.jpeg" class="card-img-top mx-auto" alt="Producto 3" style="max-width: 100%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Desarrollo de Páginas Web</h5>
+                                <p class="card-text">Descripción breve del producto.</p>
+                                <a href="presupuesto.html" class="btn btn-primary">Solicitar Presupuesto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2024 Mi Empresa - Dirección de la empresa</p>
+    <div>
+        <a href="#"><img src="img/facebook.png" alt="Red Social 1"></a>
+        <a href="#"><img src="img/whatsapp.png" alt="Red Social 2"></a>
+    </div>
+    <p><a href="#">Aviso Legal</a></p>
+</footer>
+</html>
