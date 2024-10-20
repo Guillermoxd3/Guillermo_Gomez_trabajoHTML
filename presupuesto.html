@@ -1,75 +1,79 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Indica que este documento es HTML5 -->
+<html lang="es"> <!-- Define el idioma del documento como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presupuesto - Mi Empresa</title>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo en dispositivos móviles -->
+    <title>Presupuesto - Mi Empresa</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    
+    <!-- Enlaza la hoja de estilos CSS externa -->
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Enlaza el framework Bootstrap para estilos prediseñados -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <img src="img/img1.jpeg" alt="Logotipo de la empresa">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Galería</a></li>
-                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <img src="img/img1.jpeg" alt="Logotipo de la empresa"> <!-- Logo de la empresa -->
+            <ul> <!-- Lista de navegación -->
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="productos.html">Galería</a></li> <!-- Enlace a la galería de productos -->
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li> <!-- Enlace a la página de presupuesto, marcado como activo -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
             </ul>
         </nav>
     </header>
 
-    <main>
-        <form action="#" method="POST">
-            <h2 class="text-center">Consulte su servicio - Diligencie el siguiente formulario</h2>
+    <main> <!-- Contenido principal de la página -->
+        <form action="#" method="POST"> <!-- Formulario que se enviará mediante el método POST -->
+            <h2 class="text-center">Consulte su servicio - Diligencie el siguiente formulario</h2> <!-- Título del formulario centrado -->
         
-            <div class="container">
-                <div class="form-group">
-                    <label for="servicio"><i class="fa fa-briefcase"></i> Servicio</label>
-                    <input id="servicio" name="servicio" type="text" placeholder="Ingrese el servicio a solicitar" class="form-control" required>
+            <div class="container"> <!-- Contenedor para el formulario -->
+                <div class="form-group"> <!-- Grupo de formulario para el servicio -->
+                    <label for="servicio"><i class="fa fa-briefcase"></i> Servicio</label> <!-- Etiqueta para el campo de servicio -->
+                    <input id="servicio" name="servicio" type="text" placeholder="Ingrese el servicio a solicitar" class="form-control" required> <!-- Campo de entrada para el servicio -->
                 </div>
-                <div class="form-group">
-                    <label for="nombre"><i class="fa fa-user"></i> Nombres y apellidos</label>
-                    <input id="nombre" name="nombre" type="text" placeholder="Ingrese nombre" class="form-control" required>
+                <div class="form-group"> <!-- Grupo de formulario para el nombre -->
+                    <label for="nombre"><i class="fa fa-user"></i> Nombres y apellidos</label> <!-- Etiqueta para el campo de nombre -->
+                    <input id="nombre" name="nombre" type="text" placeholder="Ingrese nombre" class="form-control" required> <!-- Campo de entrada para el nombre -->
                 </div>
-                <div class="form-group">
-                    <label for="pago"><i class="fa fa-money-bill-wave"></i> Tipo de pago</label>
-                    <select id="pago" name="pago" class="form-control" required>
-                        <option value="">Seleccione el tipo de pago</option>
-                        <option value="efectivo">EFECTIVO</option>
-                        <option value="transferencia">TRANSFERENCIA BANCARIA</option>
+                <div class="form-group"> <!-- Grupo de formulario para el tipo de pago -->
+                    <label for="pago"><i class="fa fa-money-bill-wave"></i> Tipo de pago</label> <!-- Etiqueta para el campo de tipo de pago -->
+                    <select id="pago" name="pago" class="form-control" required> <!-- Menú desplegable para seleccionar tipo de pago -->
+                        <option value="">Seleccione el tipo de pago</option> <!-- Opción por defecto -->
+                        <option value="efectivo">EFECTIVO</option> <!-- Opción de pago en efectivo -->
+                        <option value="transferencia">TRANSFERENCIA BANCARIA</option> <!-- Opción de pago por transferencia bancaria -->
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="email"><i class="fa fa-envelope"></i> E-mail</label>
-                    <input id="email" name="email" type="email" placeholder="Ingrese email" class="form-control" required>
+                <div class="form-group"> <!-- Grupo de formulario para el email -->
+                    <label for="email"><i class="fa fa-envelope"></i> E-mail</label> <!-- Etiqueta para el campo de email -->
+                    <input id="email" name="email" type="email" placeholder="Ingrese email" class="form-control" required> <!-- Campo de entrada para el email -->
                 </div>
-                <div class="form-group">
-                    <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono de contacto</label>
-                    <input id="telefono" name="telefono" type="tel" placeholder="Ingrese teléfono" class="form-control" required>
+                <div class="form-group"> <!-- Grupo de formulario para el teléfono -->
+                    <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono de contacto</label> <!-- Etiqueta para el campo de teléfono -->
+                    <input id="telefono" name="telefono" type="tel" placeholder="Ingrese teléfono" class="form-control" required> <!-- Campo de entrada para el teléfono -->
                 </div>
-                <div class="form-group form-check">
-                    <input id="privacidad" name="privacidad" type="checkbox" class="form-check-input" required>
-                    <label for="privacidad" class="form-check-label">Acepto la <a href="#">Política de privacidad</a></label>
+                <div class="form-group form-check"> <!-- Grupo para el checkbox de política de privacidad -->
+                    <input id="privacidad" name="privacidad" type="checkbox" class="form-check-input" required> <!-- Checkbox para aceptar la política de privacidad -->
+                    <label for="privacidad" class="form-check-label">Acepto la <a href="#">Política de privacidad</a></label> <!-- Etiqueta asociada al checkbox -->
                 </div>
-                <div class="form-group text-center">
-                    <input class="btn btn-info" type="submit" value="Enviar" name="btn-1">
-                    <a class="btn btn-danger" href="index.html">Volver</a>
+                <div class="form-group text-center"> <!-- Grupo de formulario para los botones, centrado -->
+                    <input class="btn btn-info" type="submit" value="Enviar" name="btn-1"> <!-- Botón para enviar el formulario -->
+                    <a class="btn btn-danger" href="index.html">Volver</a> <!-- Botón para volver a la página de inicio -->
                 </div>
             </div>
         </form>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Mi Empresa - Av 162 Madrid</p>
-        <div>
-            <a href="#"><img src="img/facebook.png" alt="Red Social 1"></a>
-            <a href="#"><img src="img/whatsapp.png" alt="Red Social 2"></a>
-            <a href="#"><img src="img/twitter.png" alt="Red Social 3"></a>
+    <footer> <!-- Pie de página -->
+        <p>&copy; 2024 Mi Empresa - Av 162 Madrid</p> <!-- Información de copyright y dirección -->
+        <div> <!-- Div para los iconos de redes sociales -->
+            <a href="#"><img src="img/facebook.png" alt="Red Social 1"></a> <!-- Icono de Facebook -->
+            <a href="#"><img src="img/whatsapp.png" alt="Red Social 2"></a> <!-- Icono de WhatsApp -->
+            <a href="#"><img src="img/twitter.png" alt="Red Social 3"></a> <!-- Icono de Twitter -->
         </div>
-        <p><a href="#">Aviso Legal</a></p>
+        <p><a href="#">Aviso Legal</a></p> <!-- Enlace a aviso legal -->
     </footer>
 </body>
 </html>
+
 

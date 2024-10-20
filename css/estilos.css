@@ -1,91 +1,103 @@
+/* Estilos generales para el cuerpo del documento */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado */
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
 }
 
+/* Estilos para el encabezado */
 header {
-    background-color: #f8f9fa;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #f8f9fa; /* Color de fondo claro para el encabezado */
+    padding: 20px; /* Espaciado interno en el encabezado */
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    align-items: center; /* Centra verticalmente los elementos en el encabezado */
+    justify-content: space-between; /* Espacia los elementos entre sí */
 }
 
+/* Estilo para la imagen del logo en la navegación */
 nav img {
-    max-width: 150px;
+    max-width: 150px; /* Limita el ancho máximo del logo */
 }
 
+/* Estilos para la lista de navegación */
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Elimina las viñetas de la lista */
+    display: flex; /* Muestra los elementos de la lista en línea */
 }
 
+/* Espaciado entre los elementos de la lista de navegación */
 nav li {
-    margin: 0 15px;
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
 }
 
+/* Estilos para los enlaces de la navegación */
 nav a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto de los enlaces */
 }
 
+/* Estilo para el enlace activo */
 nav a.active {
-    font-weight: bold;
+    font-weight: bold; /* Resalta el enlace activo con negrita */
 }
 
-
-
+/* Estilos para los encabezados principales */
 h1 {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center; /* Centra el texto del encabezado */
+    margin: 20px 0; /* Espaciado vertical alrededor del encabezado */
 }
 
+/* Estilos para la galería */
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex; /* Utiliza flexbox para la disposición de los elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias filas */
+    justify-content: space-around; /* Espacia los elementos en la galería */
 }
 
+/* Estilos para los elementos individuales de la galería */
 .item {
-    margin: 15px;
-    text-align: center;
-    max-width: 200px;
+    margin: 15px; /* Espaciado alrededor de cada elemento */
+    text-align: center; /* Centra el texto dentro del elemento */
+    max-width: 200px; /* Ancho máximo para los elementos */
 }
 
+/* Estilos para las imágenes dentro de los elementos */
 .item img {
-    width: 100%;
-    height: auto; /* Mantiene la proporción original */
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
     object-fit: cover; /* Mantiene la proporción y evita distorsión */
 }
 
+/* Estilos para los inputs dentro de un div */
 div input {
-    text-align: center; /* Asegura que el contenido dentro del div esté centrado */
+    text-align: center; /* Asegura que el contenido dentro del input esté centrado */
 }
 
+/* Estilos para el contenedor específico */
 div.container1 {
-    text-align: center; /* Asegura que el contenido dentro del div esté centrado */
-    align-items: center;
+    text-align: center; /* Centra el contenido dentro del contenedor */
+    align-items: center; /* Alinea los elementos en el centro (flexbox) */
 }
 
-
-
+/* Estilos para el pie de página */
 footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 20px;
+    background-color: #f8f9fa; /* Color de fondo claro para el pie de página */
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 20px; /* Espaciado interno en el pie de página */
 }
 
+/* Estilos para las imágenes en el pie de página */
 footer img {
-    width: 30px;
-    margin: 0 10px;
+    width: 30px; /* Ancho de las imágenes en el pie de página */
+    margin: 0 10px; /* Espaciado horizontal entre las imágenes */
 }
 
+/* Media query para dispositivos móviles */
 @media (max-width: 600px) {
     main {
-        padding: 10px;
+        padding: 10px; /* Menos espaciado en el contenedor principal en pantallas pequeñas */
     }
 
     .item {
-        max-width: 100%;
+        max-width: 100%; /* Permite que los elementos de la galería ocupen el 100% en pantallas pequeñas */
     }
 }

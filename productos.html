@@ -1,75 +1,79 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> <!-- Indica que este documento es HTML5 -->
+<html lang="es"> <!-- Define el idioma del documento como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - Mi Empresa</title>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el diseño sea responsivo en dispositivos móviles -->
+    <title>Galería - Mi Empresa</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    
+    <!-- Enlaza la hoja de estilos CSS externa -->
     <link rel="stylesheet" href="css/estilos.css">
+    <!-- Enlaza el framework Bootstrap para estilos prediseñados -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <img src="img/img1.jpeg" alt="Logotipo de la empresa">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html" class="active">Galería</a></li>
-                <li><a href="presupuesto.html">Presupuesto</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+            <img src="img/img1.jpeg" alt="Logotipo de la empresa"> <!-- Logo de la empresa -->
+            <ul> <!-- Lista de navegación -->
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="productos.html" class="active">Galería</a></li> <!-- Enlace a la galería de productos, marcado como activo -->
+                <li><a href="presupuesto.html">Presupuesto</a></li> <!-- Enlace a la página de presupuesto -->
+                <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página de contacto -->
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <h1 class="my-5 text-center">Nuestros Productos</h1>
-        <div class="row">
-            <div class="col-md-4 gallery-item">
-                <div class="card">
-                    <img src="img/producto1.jpeg" class="card-img-top" alt="Producto 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Servicios Tecnológicos</b></h5>
-                        <p class="card-text">Contamos con una amplia variedad de productos electrónicos e informáticos.</p>
+    <main class="container"> <!-- Contenedor principal de la galería -->
+        <h1 class="my-5 text-center">Nuestros Productos</h1> <!-- Título centrado de la sección -->
+        <div class="row"> <!-- Filas de la galería -->
+            <!-- Cada producto se presenta en una columna de Bootstrap -->
+            <div class="col-md-4 gallery-item"> <!-- Columna para el primer producto -->
+                <div class="card"> <!-- Tarjeta para el producto -->
+                    <img src="img/producto1.jpeg" class="card-img-top" alt="Producto 1"> <!-- Imagen del producto -->
+                    <div class="card-body"> <!-- Cuerpo de la tarjeta -->
+                        <h5 class="card-title"><b>Servicios Tecnológicos</b></h5> <!-- Título del producto -->
+                        <p class="card-text">Contamos con una amplia variedad de productos electrónicos e informáticos.</p> <!-- Descripción del producto -->
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 gallery-item">
+            <div class="col-md-4 gallery-item"> <!-- Columna para el segundo producto -->
                 <div class="card">
-                    <img src="img/servicio.png" class="card-img-top" alt="Producto 2">
+                    <img src="img/servicio.png" class="card-img-top" alt="Producto 2"> <!-- Imagen del producto -->
                     <div class="card-body">
-                        <h5 class="card-title"><b>Diseño y Modelado de Bases de Datos</b></h5>
-                        <p class="card-text">Desarrollamos bases de datos personalizadas para optimizar tu gestión empresarial.</p>
+                        <h5 class="card-title"><b>Diseño y Modelado de Bases de Datos</b></h5> <!-- Título del producto -->
+                        <p class="card-text">Desarrollamos bases de datos personalizadas para optimizar tu gestión empresarial.</p> <!-- Descripción del producto -->
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 gallery-item">
+            <div class="col-md-4 gallery-item"> <!-- Columna para el tercer producto -->
                 <div class="card">
-                    <img src="img/producto5.jpeg" class="card-img-top" alt="Producto 3">
+                    <img src="img/producto5.jpeg" class="card-img-top" alt="Producto 3"> <!-- Imagen del producto -->
                     <div class="card-body">
-                        <h5 class="card-title"><b>Desarrollo de Plataformas</b></h5>
-                        <p class="card-text">Creamos plataformas a medida, adaptadas a las necesidades de tu empresa.</p>
+                        <h5 class="card-title"><b>Desarrollo de Plataformas</b></h5> <!-- Título del producto -->
+                        <p class="card-text">Creamos plataformas a medida, adaptadas a las necesidades de tu empresa.</p> <!-- Descripción del producto -->
                     </div>
                 </div>
             </div>
             <!-- Añade más productos aquí -->
-            <div class="col-md-4 gallery-item">
+            <div class="col-md-4 gallery-item"> <!-- Columna para el cuarto producto -->
                 <div class="card">
-                    <img src="img/producto4.jpeg" class="card-img-top" alt="Producto 4">
+                    <img src="img/producto4.jpeg" class="card-img-top" alt="Producto 4"> <!-- Imagen del producto -->
                     <div class="card-body">
-                        <h5 class="card-title"><b>Consultoría IT</b></h5>
-                        <p class="card-text">Asesoramos en la implementación de soluciones tecnológicas eficientes.</p>
+                        <h5 class="card-title"><b>Consultoría IT</b></h5> <!-- Título del producto -->
+                        <p class="card-text">Asesoramos en la implementación de soluciones tecnológicas eficientes.</p> <!-- Descripción del producto -->
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Mi Empresa - Av 162 Madrid</p>
-        <div>
-            <a href="#"><img src="img/facebook.png" alt="Red Social 1"></a>
-            <a href="#"><img src="img/whatsapp.png" alt="Red Social 2"></a>
+    <footer> <!-- Pie de página -->
+        <p>&copy; 2024 Mi Empresa - Av 162 Madrid</p> <!-- Información de copyright y dirección -->
+        <div> <!-- Div para los iconos de redes sociales -->
+            <a href="#"><img src="img/facebook.png" alt="Red Social 1"></a> <!-- Icono de Facebook -->
+            <a href="#"><img src="img/whatsapp.png" alt="Red Social 2"></a> <!-- Icono de WhatsApp -->
         </div>
-        <p><a href="#">Aviso Legal</a></p>
+        <p><a href="#">Aviso Legal</a></p> <!-- Enlace a aviso legal -->
     </footer>
 </body>
 </html>
